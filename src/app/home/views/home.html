@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+  </head>
+  <body>
+    <main role="main" aria-labelledby="title">
+      <header>
+        <h1 id="title">Home</h1>
+        {{#currentUser}}
+          <div>Hi, {{ currentUser.email }}</div>
+          <div><a href="/signout">Sign Out</a></div>
+        {{/currentUser}}
+        {{^currentUser}}
+          <div><a href="/signin">Sign In or Sign Up</a></div>
+        {{/currentUser}}
+      </header>
+    </main>
+  </body>
+</html>

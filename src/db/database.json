@@ -1,0 +1,19 @@
+{
+  "dev": {
+    "driver": "pg",
+    "host": "127.0.0.1",
+    "port": 5432,
+    "database": "email-token-auth_development",
+    "user": "",
+    "password": ""
+  },
+  "test": {
+    "driver": "pg",
+    "host": "127.0.0.1",
+    "port": 5432,
+    "database": "email-token-auth_test",
+    "user": "",
+    "password": ""
+  },
+  "sql-file": true
+}
